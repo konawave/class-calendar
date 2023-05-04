@@ -3,19 +3,20 @@
 // in the html.
 $( document ).ready(function() {
 
- var dateToday = dayjs();
+  var dateToday = dayjs();
 
- var currentDay = document.querySelector('#currentDay');
- currentDay.textContent = dateToday;
+  var currentDay = document.querySelector('#currentDay');
+  currentDay.textContent = dateToday;
 
+  var saveBtn = document.querySelectorAll('.saveBtn');
+  var textBox = document.querySelectorAll('.description')
 
-
+  saveBtn.addEventListener('click', function() {
+    console.log(textBox.value);
+  } )
 
   $(function () {
-
-    $("btn saveBtn col-2 col-md-1").click(function() {
-      
-    })
+    
     })
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -83,4 +84,3 @@ $( document ).ready(function() {
 
 // <!-- @TODO: create ticket to review/update image) -->
 // [A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
-})
