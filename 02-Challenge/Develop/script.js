@@ -1,17 +1,29 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-var now = dayjs()
-console.log(now)
+$( document ).ready(function() {
+
+ var dateToday = dayjs();
+
+ var currentDay = document.querySelector('#currentDay');
+ currentDay.textContent = dateToday;
 
 
-$(function () {
+
+
+  $(function () {
+
+    $("btn saveBtn col-2 col-md-1").click(function() {
+      
+    })
+    })
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
+
   //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -24,7 +36,7 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+  });
 
 // # 05 Third-Party APIs: Work Day Scheduler
 
@@ -48,11 +60,11 @@ $(function () {
 
 // ```md
 // !GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
+// !WHEN I open the planner
+// !THEN the current day is displayed at the top of the calendar
 
-// WHEN I scroll down
-// THEN I am presented with timeblocks for standard business hours
+// !WHEN I scroll down
+// !THEN I am presented with timeblocks for standard business hours
 
 // WHEN I view the timeblocks for that day
 // THEN each timeblock is color coded to indicate whether it is in the past, present, or future
@@ -71,3 +83,4 @@ $(function () {
 
 // <!-- @TODO: create ticket to review/update image) -->
 // [A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+})
