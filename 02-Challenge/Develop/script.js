@@ -6,7 +6,7 @@ $(document).ready(function() {
   // This saves the textArea inputs to local storage, with the id as the key and input as the value
   $(".saveBtn").on("click", function(event) {
     event.preventDefault();
-    const savedInput = $(this).siblings("textarea").val()
+    const savedInput = $(this).siblings("textarea").val();
     const timeInput = $(this).parent().attr('id');
     localStorage.setItem(timeInput, savedInput);
   });
@@ -27,6 +27,5 @@ $(document).ready(function() {
   });
   // This for-loop keeps text in their respective textArea upon page reloads. 
   for (let i = 9; i < 18; i++) {
-    console.log($('#' + i).children('textArea'))
     $('#' + i).children('textArea').text(localStorage.getItem(i));
   }})

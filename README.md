@@ -31,69 +31,30 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
+## Deplayed Application Link
+Web App: https://konawave.github.io/class-calendar/
+GitHub Repo: https://github.com/konawave/class-calendar
 
-The following animation demonstrates the application functionality:
-
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
+## Mock-up
+![Image of schedule mock-up](./02-Challenge/Assets/calendar-mock.jpg)
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## How to Use
+
+* Enter any events, notes, or text you want to use in the boxed that are coloured either grey, red, or green.
+  * Grey means that time has past, Red means it is currently that time, and Green means that time is in the future.
+* Once you have entered your note, click the blue button to the right to save it. You will need to click this for each individual row if you want it saved. 
+* Notes are dependent on local storage and will stay there even if you refresh the page.
+
+## Future Development
+
+* I would like to add a 'Clear' button that deletes local storage and resets the calendar. The next step after that would be to add clear buttons to each row so users can just click that instead of having to delete their text and click the save button again. 
+
+## What I Learned
+
+* jQuery is the name of the game! This application was a great lesson in jQuery and local storage. 
+* I also learned how to incorporate standard JavaScript with some jQuery integrated. 
+* My biggest challenge was figuring out the correct syntax to change the div classes to the appropriate color-class. 
+
+
+
