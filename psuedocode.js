@@ -10,7 +10,8 @@
 
 // $('.saveBtn').on('click', function() {
 //     localStorage.set('event', textBox.value)
-//      for (i = 0; i < this.parentElemend.id[i]; i++)
+//      for (i = 2; i === this.parentElemend.id[i])
+//          textBox.append(textBox.value)
 //     retreive = localStorage.get('event')
 //     textBox.append(textBox.value)
 //   })
