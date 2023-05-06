@@ -46,6 +46,11 @@ GitHub Repo: https://github.com/konawave/class-calendar
 * Once you have entered your note, click the blue button to the right to save it. You will need to click this for each individual row if you want it saved. 
 * Notes are dependent on local storage and will stay there even if you refresh the page.
 
+## APIs Used
+
+* jQuery
+* day.js
+
 ## Future Development
 
 * I would like to add a 'Clear' button that deletes local storage and resets the calendar. The next step after that would be to add clear buttons to each row so users can just click that instead of having to delete their text and click the save button again. 
